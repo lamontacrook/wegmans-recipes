@@ -1,0 +1,32 @@
+main .side-rail-container {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1200px;
+  margin: auto;
+}
+
+main .side-rail-container .default-content-wrapper {
+  max-width: 800px;
+}
+
+main .side-rail-wrapper {
+  width: 282px;
+}
+
+main .side-rail.block {
+  border: .5px solid black;
+  border-radius: 3px;
+  padding: 7.5px 15px;
+}
+
+main .side-rail.block ul > li {
+  font-family: MillerDisplay,sans-serif;
+  font-size: 14px;
+  padding-bottom: 7px;
+}
+
+main .side-rail.block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
