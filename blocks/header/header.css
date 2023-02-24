@@ -39,6 +39,7 @@ header nav[aria-expanded=true] {
 @media (min-width: 900px) {
   header nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
 
@@ -145,6 +146,8 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  display: flex;
+  
 }
 
 header nav .nav-brand img {

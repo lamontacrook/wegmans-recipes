@@ -124,6 +124,19 @@ export default async function decorate(block) {
       });
     }
 
+    //search
+    const search = nav.querySelector('.icon-search');
+    const searchForm = document.createElement('form'); //createTag('form', {class: 'no-submit'});
+    const searchContainer = document.createElement('div'); 
+    searchContainer.classList.add('search-container');
+    searchContainer.append(searchForm);
+    console.log(searchContainer);
+    //search.append(searchContainer);
+    searchContainer.append(search);
+    nav.querySelector('.nav-brand > p:nth-child(2)').replaceWith(searchContainer);
+   
+    console.log(nav.querySelector('.nav-brand'));
+
     // hamburger for mobile
     const hamburger = document.createElement('div');
     hamburger.classList.add('nav-hamburger');

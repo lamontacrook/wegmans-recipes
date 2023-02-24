@@ -20,9 +20,9 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --body-font-family: WhitneySSm-Medium-Web, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: "MillerDisplay";;
+  --fixed-font-family: WhitneySSm-Medium-Web, 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -30,7 +30,7 @@
   --body-font-size-xs: 16px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
+  --heading-font-size-xxl: 62px;
   --heading-font-size-xl: 40px;
   --heading-font-size-l: 32px;
   --heading-font-size-m: 24px;
@@ -70,7 +70,18 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
+h1 { 
+  font-size: var(--heading-font-size-xxl);
+  line-height: 65px;
+  padding-right: 225px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
 h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
@@ -105,6 +116,19 @@ pre {
   overflow: scroll;
 }
 
+p {
+  font-family: "WhitneySSm";
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #000;
+  font-size: 19px;
+  line-height: 1.5;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
 /* buttons */
 
 a.button:any-link, button {
@@ -118,13 +142,19 @@ a.button:any-link, button {
   font-style: normal; 
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  /* color: var(--background-color); */
+  /* background-color: var(--link-color); */
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+
+  text-decoration: none;
+  color: #ce3f24;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+  font-weight: 600;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
