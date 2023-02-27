@@ -1,9 +1,14 @@
 /* header and nav layout */
+
+header {
+  background-color: white;
+}
+
 header .nav-wrapper {
-  background-color: var(--background-color);
   width: 100%;
   z-index: 2;
   position: fixed;
+  background-color: white;
 }
 
 header nav {
@@ -19,6 +24,7 @@ header nav {
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
+  background-color: white;
 }
 
 header nav[aria-expanded=true] {
@@ -151,7 +157,8 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  /* width: 128px; */
+  width: 100%;
   height: auto;
 }
 

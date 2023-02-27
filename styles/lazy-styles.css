@@ -1,24 +1,24 @@
 @font-face {
-  font-family: WhitneySSm-Black-Web;
-  src: url('./fonts/WhitneySSm-Black-Web.woff2');
+  font-family: whitneyssm-black-web;
+  src: url('./fonts/whitneyssm-black-web.woff2');
 }
 
 @font-face {
-  font-family: WhitneySSm-Book-Web;
-  src: url('./fonts/WhitneySSm-Book-Web.woff2');
+  font-family: whitneyssm-book-web;
+  src: url('./fonts/whitneyssm-book-web.woff2');
 }
 
 @font-face {
-  font-family: WhitneySSm-BookItalic-Web;
-  src: url('./fonts/WhitneySSm-BookItalic-Web.woff2');
+  font-family: whitneyssm-bookitalic-web;
+  src: url('./fonts/whitneyssm-bookitalic-web.woff2');
 }
 
 @font-face {
-  font-family: WhitneySSm-Medium-Web;
-  src: url('./fonts/WhitneySSm-Medium-Web.woff2');
+  font-family: whitneyssm-medium-web;
+  src: url('./fonts/whitneyssm-medium-web.woff2');
 }
 
 @font-face {
-  font-family: WhitneySSm-MediumItalic-Web;
-  src: url('./fonts/WhitneySSm-MediumItalic-Web.woff2');
+  font-family: whitneyssm-mediumitalic-web;
+  src: url('./fonts/whitneyssm-mediumitalic-web.woff2');
 }

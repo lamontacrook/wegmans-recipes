@@ -20,9 +20,9 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: WhitneySSm-Medium-Web, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: whitneyssm-medium-web, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: "MillerDisplay";;
-  --fixed-font-family: WhitneySSm-Medium-Web, 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: whitneyssm-medium-web, 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 186px;
 
 }
 
@@ -73,13 +73,12 @@ h4, h5, h6 {
 h1 { 
   font-size: var(--heading-font-size-xxl);
   line-height: 65px;
-  padding-right: 225px;
   font-family: var(--heading-font-family);
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
   margin: 0;
 }
 h2 { font-size: var(--heading-font-size-m) }
@@ -117,7 +116,7 @@ pre {
 }
 
 p {
-  font-family: "WhitneySSm";
+  font-family: whitneyssm-medium-web, sans-serif;  
   font-weight: lighter;
   font-style: normal;
   font-stretch: normal;
@@ -125,7 +124,7 @@ p {
   color: #000;
   font-size: 19px;
   line-height: 1.5;
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
   margin: 0;
 }
 
@@ -142,19 +141,13 @@ a.button:any-link, button {
   font-style: normal; 
   font-weight: 600;
   cursor: pointer;
-  /* color: var(--background-color); */
-  /* background-color: var(--link-color); */
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
-
-  text-decoration: none;
   color: #ce3f24;
-  -webkit-transition-duration: .4s;
   transition-duration: .4s;
-  font-weight: 600;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -265,3 +258,4 @@ main .section[data-section-status='initialized'] {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+

@@ -5,10 +5,25 @@ footer {
 }
 
 footer .footer {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: max-content;
   margin: auto;
 }
 
 footer .footer p {
   margin: 0;
+}
+
+footer.footer-wrapper {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+footer .footer img {
+  margin: auto;
+  padding: unset;
+  aspect-ratio: unset;
+  width: unset;
+  max-width: 1241px;
+  height: auto;
 }
