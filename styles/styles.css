@@ -20,9 +20,9 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
-  --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --body-font-family: whitneyssm-medium-web, 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --heading-font-family: "MillerDisplay";;
+  --fixed-font-family: whitneyssm-medium-web, 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -30,7 +30,7 @@
   --body-font-size-xs: 16px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
+  --heading-font-size-xxl: 62px;
   --heading-font-size-xl: 40px;
   --heading-font-size-l: 32px;
   --heading-font-size-m: 24px;
@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 186px;
 
 }
 
@@ -70,8 +70,18 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
+h1 { 
+  font-size: var(--heading-font-size-xxl);
+  line-height: 65px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  padding: 0 0 10px;
+  margin: 0;
+}
+h2 { font-size: var(--heading-font-size-m) }
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
@@ -105,6 +115,19 @@ pre {
   overflow: scroll;
 }
 
+p {
+  font-family: whitneyssm-medium-web, sans-serif;  
+  font-weight: lighter;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #000;
+  font-size: 19px;
+  line-height: 1.5;
+  padding: 0 0 10px;
+  margin: 0;
+}
+
 /* buttons */
 
 a.button:any-link, button {
@@ -118,13 +141,13 @@ a.button:any-link, button {
   font-style: normal; 
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
+  color: #ce3f24;
+  transition-duration: .4s;
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
@@ -235,3 +258,4 @@ main .section[data-section-status='initialized'] {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+

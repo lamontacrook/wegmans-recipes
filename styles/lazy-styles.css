@@ -1,1 +1,24 @@
-/* below the fold CSS goes here */
+@font-face {
+  font-family: whitneyssm-black-web;
+  src: url('./fonts/whitneyssm-black-web.woff2');
+}
+
+@font-face {
+  font-family: whitneyssm-book-web;
+  src: url('./fonts/whitneyssm-book-web.woff2');
+}
+
+@font-face {
+  font-family: whitneyssm-bookitalic-web;
+  src: url('./fonts/whitneyssm-bookitalic-web.woff2');
+}
+
+@font-face {
+  font-family: whitneyssm-medium-web;
+  src: url('./fonts/whitneyssm-medium-web.woff2');
+}
+
+@font-face {
+  font-family: whitneyssm-mediumitalic-web;
+  src: url('./fonts/whitneyssm-mediumitalic-web.woff2');
+}
