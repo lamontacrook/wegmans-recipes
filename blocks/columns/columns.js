@@ -54,10 +54,8 @@ export default async function decorate(block) {
     });
   });
 
-  const btnElement = cols[1].querySelector('p.button-container');
+  const btnElement = cols[1].querySelector('p>a');
   const pimElement = document.createElement('div');
-  pimElement.innerHTML = 'hello';
-  console.log(btnElement.querySelector('a'));
-  const pimList = await getPim(btnElement.querySelector('a').href);
+  const pimList = await getPim(btnElement.href);
   btnElement.replaceWith(pimList);
 }
